@@ -22,11 +22,15 @@ When you open second time, the updated info should be shown.
 I've tried to make the app adoptive to future upgrades. Therefore I assumed that in principle room numbers may be not a continious sequence (for example, 1,2,4, where 3 is absent), and implemented a dialogue window which lists the available rooms. That required a bit longer code.
 - `Room` is a class with two attributes, Number and Booked status.
 - `DbConnect` has two public functions:
--- `List<Room> executeQueryRooms()` returns a list of all rooms which are in the database at the moment.
--- `void executeUpdateRooms(List<Room>)` puts the results of manipulation into the database.
+
+`List<Room> executeQueryRooms()` returns a list of all rooms which are in the database at the moment.
+
+`void executeUpdateRooms(List<Room>)` puts the results of manipulation into the database.
 - `App` creates a window for the user to work with. Along with the GUI part, it has parser function to transform the list of rooms into human-readable format and back:
--- `makeLabel` creates a string of booked(1) or free(0) rooms, for example 1-3,6,9-10
--- `parseInput` converts such string into a TreeSet of numbers which then is )used to update `List<Room>`. 
+
+`makeLabel` creates a string of booked(1) or free(0) rooms, for example 1-3,6,9-10
+
+`parseInput` converts such string into a TreeSet of numbers which then is )used to update `List<Room>`. 
 - `Compare` is comparator for room sorting by room number (in case if they are not ordered in the DB)
 
 ## Test
