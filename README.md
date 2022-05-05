@@ -1,7 +1,9 @@
 
 ## General
 Jar and classes are already in the repository. Run the app from the root, specify the path to SQLite driver: 
-- `java -classpath ".;dbconnect/sqlite.jar" app/App` - this should open a GUI window. Write rooms which you need to book/unbook in the described format (1-3,6,9-10), press Enter, then press "Save changes to the database".  
+- `java -classpath ".;dbconnect/sqlite.jar" app/App` - this should open a GUI window. Write rooms which you need to book/unbook in the described format (1-3,6,9-10), press Enter, then press "Save changes to the database". That's how it should look
+
+<img src="demo.png" width="300">
 
 Used packages:
 - `jdk1.8.0_333` 
