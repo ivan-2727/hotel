@@ -2,6 +2,7 @@
 ## General
 Jar and classes are already in the repository. To recompile everything from the root:
 - `javac room/Room.java compare/Compare.java dbconnect/DbConnect.java app/App.java -classpath ".;test/junit.jar" test/MyTest.java`
+
 Run the app from the root, specify the path to SQLite driver: 
 - `java -classpath ".;dbconnect/sqlite.jar" app/App` - this should open a GUI window. Write rooms which you need to book/unbook in the described format (1-3,6,9-10), press Enter, then press "Save changes to the database". That's how it should look
 
