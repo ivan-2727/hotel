@@ -10,6 +10,9 @@ Used packages:
 - `jre1.8.0_333`  
 - `sqlite-jdbc/3.36.0.3` as the driver (https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc/3.36.0.3) 
 
+To recompile everything:
+- `javac room/Room.java compare/Compare.java dbconnect/DbConnect.java app/App.java -classpath ".;test/junit.jar" test/MyTest.java`
+
 ## Database
 By default, **dbconnect/Hotel.db** contains a single table "Hotel" with 999 free rooms which the user is supposed to see in the dialogue window. 
 The structure of the table is as follows, 
@@ -37,6 +40,4 @@ I've tried to make the app adoptive to future upgrades. Therefore I assumed that
 Run test from the root. Specify the path to JUnit: 
 - `java -classpath ".;test/junit.jar" org.junit.runner.JUnitCore test.MyTest`
 The test evaluates the parser functions from the App class. 
-
-To recompile everything:
-- `javac room/Room.java compare/Compare.java dbconnect/DbConnect.java app/App.java -classpath ".;test/junit.jar" test/MyTest.java`
+ 
