@@ -8,7 +8,7 @@ Run the app from the root, specify the path to SQLite driver:
 
 <img src="demo.png" width="300">
 
-Used packages:
+Used versions:
 - `jdk1.8.0_333` 
 - `jre1.8.0_333`  
 - `sqlite-jdbc/3.36.0.3` as the driver (https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc/3.36.0.3) 
